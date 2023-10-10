@@ -1,0 +1,74 @@
+  [
+      {
+        "id": 1,
+        "place_name": "Cox's Bazar",
+        "title": "Cox's Bazar Sea Beach",
+        "img": "https://example.com/coxs-bazar.jpg",
+        "description": "Cox's Bazar is known for having the world's longest natural sea beach, stretching for 120 kilometers along the Bay of Bengal."
+      },
+      {
+        "id": 2,
+        "place_name": "Sundarbans",
+        "title": "Sundarbans Mangrove Forest",
+        "img": "https://example.com/sundarbans.jpg",
+        "description": "The Sundarbans is the largest mangrove forest in the world and home to the Bengal tiger. It is a UNESCO World Heritage Site."
+      },
+      {
+        "id": 3,
+        "place_name": "Sajek Valley",
+        "title": "Sajek Valley Hill Resort",
+        "img": "https://example.com/sajek-valley.jpg",
+        "description": "Sajek Valley is a picturesque hill resort in the Chittagong Hill Tracts, offering stunning views and a tranquil atmosphere."
+      },
+      {
+        "id": 4,
+        "place_name": "Srimangal",
+        "title": "Srimangal Tea Gardens",
+        "img": "https://example.com/srimangal.jpg",
+        "description": "Srimangal is known as the 'Tea Capital of Bangladesh' and is famous for its lush tea gardens and serene surroundings."
+      },
+      {
+        "id": 5,
+        "place_name": "Ratnodweep",
+        "title": "Ratnodweep Island",
+        "img": "https://example.com/ratnodweep.jpg",
+        "description": "Ratnodweep is a small island in the Bay of Bengal, known for its crystal-clear waters and coral reefs, making it a great spot for snorkeling and diving."
+      },
+      {
+        "id": 6,
+        "place_name": "Kuakata",
+        "title": "Kuakata Sea Beach",
+        "img": "https://example.com/kuakata.jpg",
+        "description": "Kuakata is known as the 'Daughter of the Sea' and offers a panoramic view of both the sunrise and sunset over the Bay of Bengal."
+      },
+      {
+        "id": 7,
+        "place_name": "Rangamati",
+        "title": "Rangamati Hill District",
+        "img": "https://example.com/rangamati.jpg",
+        "description": "Rangamati is a picturesque hill district surrounded by lush green hills, rivers, and lakes, making it a popular destination for nature lovers."
+      },
+      {
+        "id": 8,
+        "place_name": "Saint Martin's Island",
+        "title": "Saint Martin's Island",
+        "img": "https://example.com/saint-martins.jpg",
+        "description": "Saint Martin's Island is the only coral island in Bangladesh and is known for its stunning beaches, clear waters, and diverse marine life."
+      },
+      {
+        "id": 9,
+        "place_name": "Jaflong",
+        "title": "Jaflong Tea Gardens",
+        "img": "https://example.com/jaflong.jpg",
+        "description": "Jaflong is a scenic spot in the Sylhet region, famous for its tea gardens, Khasi tribal culture, and views of the Khasi hills."
+      },
+      {
+        "id": 10,
+        "place_name": "Paharpur",
+        "title": "Paharpur Buddhist Vihara",
+        "img": "https://example.com/paharpur.jpg",
+        "description": "Paharpur is home to an ancient Buddhist Vihara dating back to the 8th century and is a UNESCO World Heritage Site."
+      }
+    ]
+ 
+  

@@ -2,12 +2,13 @@ import { Link } from "react-router-dom";
 import Navbar from "../../../Navbar/Navbar";
 import { useContext, useState } from "react";
 import { AuthCreate } from "../AuthProvider/AuthProvider";
+import swal from 'sweetalert';
 
 
 
 const Register = () => {
-    
-    const {newUser}=useContext(AuthCreate);
+    const [password,setpassword]=useState('')
+    const {newUser,Googleauth}=useContext(AuthCreate);
     const heldlebtnmain = e => {
         e.preventDefault()
         console.log(e.currentTarget);
@@ -18,14 +19,55 @@ const Register = () => {
         // const password=e.target.password.value
         console.log(password,email);
 
+        setpassword('')
+        if (password.length < 6) {
+            setpassword('password should be at least 6 character')
+        }
+        else if (!/[0-9]/.test(password)) {
+            setpassword('Please adding Number character')
+            return;
+        }
+        else if (!/[A-Z]/.test(password)) {
+            setpassword('Please adding at least 1 uppercase')
+            return;
+
+        }
+        else if (!/(?=.*[!@#$%^&*])/.test(password)) {
+            setpassword('Please adding at least one special character')
+            return;
+        }
         newUser(email,password)
         .then(result =>{
             console.log(result.user);
+            swal({
+                title: "Are you sure?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+              })
+              .then((willDelete) => {
+                if (willDelete) {
+                  swal("Your information will safe!", {
+                    icon: "success",
+                  });
+                } else {
+                  swal("Successfully register!");
+                }
+              });
         })
         .catch(error=>{
             console.error(error);
         })
 
+    }
+    const Googlebtn=()=>{
+        Googleauth()
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.error(error)
+        })
     }
     return (
         <div>
@@ -63,6 +105,12 @@ const Register = () => {
                             </div>
                             <p className="text-center mt-4">Already have an account ? <Link to="/login"><button  className=" text-lg hover:underline hover:bg-green-100 hover:px-2 rounded-md">Login</button></Link></p>
                         </form>
+                        <p className="text-center pb-4 text-lg">Register with <button onClick={Googlebtn} className="btn btn-outline btn-error">Google</button></p>
+                    </div>
+                    <div className='bg-red-200 rounded-lg'>
+                        {
+                            password && <p className='mt-4 px-4 py-2 font-semibold text-2xl '> {password}</p>
+                        }
                     </div>
                 </div>
             </div>
