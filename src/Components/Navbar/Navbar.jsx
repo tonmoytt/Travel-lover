@@ -1,15 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import img from './../../assets/images/icons/logo.png'
+import { BiSearchAlt2 } from 'react-icons/bi';
 
 const Navbar = () => {
     const navlink = <>
-        <li className="text-xl ml-40"><NavLink to="/">News</NavLink> </li>
-        <li className="text-xl ml-4"><NavLink to="/destination">Destination</NavLink> </li>
-        <li className="text-xl ml-4"><NavLink to="/blog">Blog</NavLink> </li>
-        <li className="text-xl ml-4"><NavLink to="/contact">Contact</NavLink> </li>
-         
-         
-         
+        <li className="text-xl font-serif ml-4 md:ml-20 lg:ml-40"><NavLink to="/">News</NavLink> </li>
+        <li className="text-xl font-serif  ml-4"><NavLink to="/destination">Destination</NavLink> </li>
+        <li className="text-xl font-serif ml-4"><NavLink to="/blog">Blog</NavLink> </li>
+        <li className="text-xl font-serif ml-4"><NavLink to="/contact">Contact</NavLink> </li>
+
+
+
     </>
 
 
@@ -30,13 +31,20 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                     <img className="h-14 w-36" src={img} alt="" />
-                     <label  className="label">
-                     <input className="input input-bordered ml-20  px-4 py-2 rounded-md bg-slate-100" type="text" name="text" placeholder="search your destination"/>
-                     </label>
-                     
+                    <img className="h-14 w-36" src={img} alt="" />
+
+
+
+                    <input className="input relative  input-bordered ml-20  px-4 py-2 rounded-md bg-slate-100" type="text" name="text" placeholder="search your destination" />
+                    {
+                        <BiSearchAlt2 className="absolute ml-10"></BiSearchAlt2>
+
+                    }
+
+
+
                 </div>
-               
+
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {
